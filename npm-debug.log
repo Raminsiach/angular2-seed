@@ -1,0 +1,231 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'zone.js@0.5.11',
+1 verbose cli   '--save' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.6
+4 verbose install initial load of /Users/ramin/Projects/angular2-seed/package.json
+5 warn package.json angular2-seed@1.0.0 No repository field.
+6 warn package.json angular2-seed@1.0.0 No README data
+7 verbose installManyTop reading scoped package data from /Users/ramin/Projects/angular2-seed/node_modules/angular2/package.json
+8 verbose installManyTop reading scoped package data from /Users/ramin/Projects/angular2-seed/node_modules/browser-sync/package.json
+9 verbose installManyTop reading scoped package data from /Users/ramin/Projects/angular2-seed/node_modules/es6-promise/package.json
+10 verbose installManyTop reading scoped package data from /Users/ramin/Projects/angular2-seed/node_modules/es6-shim/package.json
+11 verbose installManyTop reading scoped package data from /Users/ramin/Projects/angular2-seed/node_modules/gulp/package.json
+12 verbose installManyTop reading scoped package data from /Users/ramin/Projects/angular2-seed/node_modules/reflect-metadata/package.json
+13 verbose installManyTop reading scoped package data from /Users/ramin/Projects/angular2-seed/node_modules/rxjs/package.json
+14 verbose installManyTop reading scoped package data from /Users/ramin/Projects/angular2-seed/node_modules/systemjs/package.json
+15 verbose installManyTop reading scoped package data from /Users/ramin/Projects/angular2-seed/node_modules/zone.js/package.json
+16 verbose readDependencies loading dependencies from /Users/ramin/Projects/angular2-seed/package.json
+17 silly cache add args [ 'zone.js@0.5.11', null ]
+18 verbose cache add spec zone.js@0.5.11
+19 silly cache add parsed spec Result {
+19 silly cache add   raw: 'zone.js@0.5.11',
+19 silly cache add   scope: null,
+19 silly cache add   name: 'zone.js',
+19 silly cache add   rawSpec: '0.5.11',
+19 silly cache add   spec: '0.5.11',
+19 silly cache add   type: 'version' }
+20 silly addNamed zone.js@0.5.11
+21 verbose addNamed "0.5.11" is a plain semver version for zone.js
+22 silly mapToRegistry name zone.js
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry uri https://registry.npmjs.org/zone.js
+26 verbose addNameVersion registry:https://registry.npmjs.org/zone.js not in flight; fetching
+27 verbose request uri https://registry.npmjs.org/zone.js
+28 verbose request no auth needed
+29 info attempt registry request try #1 at 1:19:33 PM
+30 verbose request id 54a6aab0966ec4a0
+31 verbose etag "3GKWDU3GG4G6O0C93TO8BD8RU"
+32 http request GET https://registry.npmjs.org/zone.js
+33 http 304 https://registry.npmjs.org/zone.js
+34 verbose headers { date: 'Fri, 05 Feb 2016 12:17:53 GMT',
+34 verbose headers   via: '1.1 varnish',
+34 verbose headers   'cache-control': 'max-age=300',
+34 verbose headers   etag: '"3GKWDU3GG4G6O0C93TO8BD8RU"',
+34 verbose headers   age: '249',
+34 verbose headers   connection: 'keep-alive',
+34 verbose headers   'x-served-by': 'cache-fra1224-FRA',
+34 verbose headers   'x-cache': 'HIT',
+34 verbose headers   'x-cache-hits': '1',
+34 verbose headers   'x-timer': 'S1454674673.327475,VS0,VE0',
+34 verbose headers   vary: 'Accept' }
+35 silly get cb [ 304,
+35 silly get   { date: 'Fri, 05 Feb 2016 12:17:53 GMT',
+35 silly get     via: '1.1 varnish',
+35 silly get     'cache-control': 'max-age=300',
+35 silly get     etag: '"3GKWDU3GG4G6O0C93TO8BD8RU"',
+35 silly get     age: '249',
+35 silly get     connection: 'keep-alive',
+35 silly get     'x-served-by': 'cache-fra1224-FRA',
+35 silly get     'x-cache': 'HIT',
+35 silly get     'x-cache-hits': '1',
+35 silly get     'x-timer': 'S1454674673.327475,VS0,VE0',
+35 silly get     vary: 'Accept' } ]
+36 verbose etag https://registry.npmjs.org/zone.js from cache
+37 verbose get saving zone.js to /Users/ramin/.npm/registry.npmjs.org/zone.js/.cache.json
+38 silly cache afterAdd zone.js@0.5.11
+39 verbose afterAdd /Users/ramin/.npm/zone.js/0.5.11/package/package.json not in flight; writing
+40 verbose afterAdd /Users/ramin/.npm/zone.js/0.5.11/package/package.json written
+41 silly install resolved [ { name: 'zone.js',
+41 silly install resolved     version: '0.5.11',
+41 silly install resolved     description: 'Zones for JavaScript',
+41 silly install resolved     main: 'lib/zone.js',
+41 silly install resolved     files: [ 'lib', 'dist' ],
+41 silly install resolved     directories: { lib: 'lib', test: 'test' },
+41 silly install resolved     scripts:
+41 silly install resolved      { postinstall: 'tsd install',
+41 silly install resolved        tsc: 'tsc',
+41 silly install resolved        'tsc:w': 'tsc -w',
+41 silly install resolved        test: 'karma start karma.conf.js',
+41 silly install resolved        serve: 'python -m SimpleHTTPServer 8000' },
+41 silly install resolved     repository: { type: 'git', url: 'git://github.com/angular/zone.js.git' },
+41 silly install resolved     author: { name: 'Brian Ford' },
+41 silly install resolved     license: 'MIT',
+41 silly install resolved     bugs: { url: 'https://github.com/angular/zone.js/issues' },
+41 silly install resolved     dependencies: { 'es6-promise': '^3.0.2' },
+41 silly install resolved     devDependencies:
+41 silly install resolved      { gulp: '^3.8.11',
+41 silly install resolved        'gulp-util': '^3.0.7',
+41 silly install resolved        'gulp-rename': '^1.2.2',
+41 silly install resolved        'gulp-uglify': '^1.2.0',
+41 silly install resolved        'jasmine-core': '^2.2.0',
+41 silly install resolved        'karma-firefox-launcher': '^0.1.4',
+41 silly install resolved        'karma-safari-launcher': '^0.1.1',
+41 silly install resolved        'karma-sauce-launcher': '^0.2.10',
+41 silly install resolved        karma: '^0.13.14',
+41 silly install resolved        'karma-chrome-launcher': '^0.2.1',
+41 silly install resolved        'karma-jasmine': '^0.3.6',
+41 silly install resolved        'karma-sourcemap-loader': '^0.3.6',
+41 silly install resolved        'karma-webpack': '^1.7.0',
+41 silly install resolved        'ts-loader': '^0.6.0',
+41 silly install resolved        tsd: '^0.6.5',
+41 silly install resolved        typescript: '^1.7.3',
+41 silly install resolved        webpack: '^1.12.2',
+41 silly install resolved        'nodejs-websocket': '^1.2.0',
+41 silly install resolved        'vinyl-buffer': '^1.0.0',
+41 silly install resolved        'vinyl-source-stream': '^1.1.0' },
+41 silly install resolved     gitHead: '62955d151e1d90532881934f0da8598e6c93b384',
+41 silly install resolved     homepage: 'https://github.com/angular/zone.js#readme',
+41 silly install resolved     _id: 'zone.js@0.5.11',
+41 silly install resolved     _shasum: '97b84ef72ed1223b6c17c23d414b912c3db86827',
+41 silly install resolved     _from: 'zone.js@0.5.11',
+41 silly install resolved     _npmVersion: '2.14.7',
+41 silly install resolved     _nodeVersion: '4.2.2',
+41 silly install resolved     _npmUser: { name: 'btford', email: 'briantford@gmail.com' },
+41 silly install resolved     dist:
+41 silly install resolved      { shasum: '97b84ef72ed1223b6c17c23d414b912c3db86827',
+41 silly install resolved        tarball: 'http://registry.npmjs.org/zone.js/-/zone.js-0.5.11.tgz' },
+41 silly install resolved     maintainers: [ [Object] ],
+41 silly install resolved     _resolved: 'https://registry.npmjs.org/zone.js/-/zone.js-0.5.11.tgz',
+41 silly install resolved     readme: 'ERROR: No README data found!' } ]
+42 info install zone.js@0.5.11 into /Users/ramin/Projects/angular2-seed
+43 info installOne zone.js@0.5.11
+44 verbose installOne of zone.js to /Users/ramin/Projects/angular2-seed not in flight; installing
+45 verbose lock using /Users/ramin/.npm/_locks/zone-js-a13e8995f7709529.lock for /Users/ramin/Projects/angular2-seed/node_modules/zone.js
+46 silly install write writing zone.js 0.5.11 to /Users/ramin/Projects/angular2-seed/node_modules/zone.js
+47 verbose unbuild node_modules/zone.js
+48 info preuninstall zone.js@0.5.10
+49 info uninstall zone.js@0.5.10
+50 verbose unbuild rmStuff zone.js@0.5.10 from /Users/ramin/Projects/angular2-seed/node_modules
+51 info postuninstall zone.js@0.5.10
+52 silly gentlyRm /Users/ramin/Projects/angular2-seed/node_modules/zone.js is being purged from base /Users/ramin/Projects/angular2-seed
+53 verbose gentlyRm don't care about contents; nuking /Users/ramin/Projects/angular2-seed/node_modules/zone.js
+54 silly vacuum-fs purging /Users/ramin/Projects/angular2-seed/node_modules/zone.js
+55 silly vacuum-fs quitting because other entries in /Users/ramin/Projects/angular2-seed/node_modules
+56 verbose tar unpack /Users/ramin/.npm/zone.js/0.5.11/package.tgz
+57 verbose tar unpacking to /Users/ramin/Projects/angular2-seed/node_modules/zone.js
+58 silly gentlyRm /Users/ramin/Projects/angular2-seed/node_modules/zone.js is being purged
+59 verbose gentlyRm don't care about contents; nuking /Users/ramin/Projects/angular2-seed/node_modules/zone.js
+60 silly gunzTarPerm modes [ '755', '644' ]
+61 silly gunzTarPerm extractEntry package.json
+62 silly gunzTarPerm extractEntry README.md
+63 silly gunzTarPerm extractEntry LICENSE
+64 silly gunzTarPerm extractEntry dist/jasmine-patch.js
+65 silly gunzTarPerm extractEntry dist/jasmine-patch.min.js
+66 silly gunzTarPerm extractEntry dist/long-stack-trace-zone.js
+67 silly gunzTarPerm extractEntry dist/long-stack-trace-zone.min.js
+68 silly gunzTarPerm extractEntry dist/zone-microtask.js
+69 silly gunzTarPerm extractEntry dist/zone-microtask.min.js
+70 silly gunzTarPerm extractEntry dist/zone.js
+71 silly gunzTarPerm extractEntry dist/zone.min.js
+72 silly gunzTarPerm extractEntry lib/browser/jasmine-patch.ts
+73 silly gunzTarPerm extractEntry lib/browser/long-stack-trace-zone.ts
+74 silly gunzTarPerm extractEntry lib/browser/zone-microtask.ts
+75 silly gunzTarPerm extractEntry lib/browser/zone.ts
+76 silly gunzTarPerm extractEntry lib/core.ts
+77 silly gunzTarPerm extractEntry lib/jasmine/patch.ts
+78 silly gunzTarPerm extractEntry lib/keys.ts
+79 silly gunzTarPerm extractEntry lib/microtask.ts
+80 silly gunzTarPerm extractEntry lib/patch/geolocation.ts
+81 silly gunzTarPerm extractEntry lib/patch/browser.ts
+82 silly gunzTarPerm extractEntry lib/patch/event-target.ts
+83 silly gunzTarPerm extractEntry lib/patch/file-reader.ts
+84 silly gunzTarPerm extractEntry lib/patch/functions.ts
+85 silly gunzTarPerm extractEntry lib/patch/define-property.ts
+86 silly gunzTarPerm extractEntry lib/patch/mutation-observer.ts
+87 silly gunzTarPerm extractEntry lib/patch/promise.ts
+88 silly gunzTarPerm extractEntry lib/patch/property-descriptor.ts
+89 silly gunzTarPerm extractEntry lib/patch/register-element.ts
+90 silly gunzTarPerm extractEntry lib/patch/websocket.ts
+91 silly gunzTarPerm extractEntry lib/utils.ts
+92 silly gunzTarPerm extractEntry lib/wtf.ts
+93 silly gunzTarPerm extractEntry lib/zone.ts
+94 silly gunzTarPerm extractEntry lib/zones/long-stack-trace.ts
+95 verbose write writing to /Users/ramin/Projects/angular2-seed/node_modules/zone.js/package.json
+96 info preinstall zone.js@0.5.11
+97 verbose readDependencies loading dependencies from /Users/ramin/Projects/angular2-seed/node_modules/zone.js/package.json
+98 verbose readDependencies loading dependencies from /Users/ramin/Projects/angular2-seed/node_modules/zone.js/package.json
+99 silly install resolved []
+100 verbose about to build /Users/ramin/Projects/angular2-seed/node_modules/zone.js
+101 info build /Users/ramin/Projects/angular2-seed/node_modules/zone.js
+102 info linkStuff zone.js@0.5.11
+103 silly linkStuff zone.js@0.5.11 has /Users/ramin/Projects/angular2-seed/node_modules as its parent node_modules
+104 verbose linkBins zone.js@0.5.11
+105 verbose linkMans zone.js@0.5.11
+106 verbose rebuildBundles zone.js@0.5.11
+107 info install zone.js@0.5.11
+108 info postinstall zone.js@0.5.11
+109 verbose unsafe-perm in lifecycle true
+110 info zone.js@0.5.11 Failed to exec postinstall script
+111 verbose unlock done using /Users/ramin/.npm/_locks/zone-js-a13e8995f7709529.lock for /Users/ramin/Projects/angular2-seed/node_modules/zone.js
+112 verbose stack Error: zone.js@0.5.11 postinstall: `tsd install`
+112 verbose stack spawn ENOENT
+112 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:17:16)
+112 verbose stack     at emitTwo (events.js:87:13)
+112 verbose stack     at ChildProcess.emit (events.js:172:7)
+112 verbose stack     at maybeClose (internal/child_process.js:821:16)
+112 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+113 verbose pkgid zone.js@0.5.11
+114 verbose cwd /Users/ramin/Projects/angular2-seed
+115 error Darwin 15.0.0
+116 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "zone.js@0.5.11" "--save"
+117 error node v4.2.6
+118 error npm  v2.14.12
+119 error file sh
+120 error code ELIFECYCLE
+121 error errno ENOENT
+122 error syscall spawn
+123 error zone.js@0.5.11 postinstall: `tsd install`
+123 error spawn ENOENT
+124 error Failed at the zone.js@0.5.11 postinstall script 'tsd install'.
+124 error This is most likely a problem with the zone.js package,
+124 error not with npm itself.
+124 error Tell the author that this fails on your system:
+124 error     tsd install
+124 error You can get their info via:
+124 error     npm owner ls zone.js
+124 error There is likely additional logging output above.
+125 verbose exit [ 1, true ]
+126 verbose unbuild node_modules/zone.js
+127 info preuninstall zone.js@0.5.11
+128 info uninstall zone.js@0.5.11
+129 verbose unbuild rmStuff zone.js@0.5.11 from /Users/ramin/Projects/angular2-seed/node_modules
+130 info postuninstall zone.js@0.5.11
+131 silly gentlyRm /Users/ramin/Projects/angular2-seed/node_modules/zone.js is being purged from base /Users/ramin/Projects/angular2-seed
+132 verbose gentlyRm don't care about contents; nuking /Users/ramin/Projects/angular2-seed/node_modules/zone.js
+133 silly vacuum-fs purging /Users/ramin/Projects/angular2-seed/node_modules/zone.js
+134 silly vacuum-fs quitting because other entries in /Users/ramin/Projects/angular2-seed/node_modules
